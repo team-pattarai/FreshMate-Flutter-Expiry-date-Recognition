@@ -1,1 +1,1 @@
-# Smart-Attendance-Extension
+# FreshMate-Flutter-Expiry-date-Recognition
