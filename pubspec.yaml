@@ -1,0 +1,18 @@
+name: freshmate
+description: A Flutter project to manage food expiry alerts.
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Add any other dependencies you need here
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
