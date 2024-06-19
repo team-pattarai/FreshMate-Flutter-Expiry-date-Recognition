@@ -16,3 +16,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  
+  assets:
+    - /Users/solai/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/FreshMate-Flutter-Expiry-date-Recognition/assets/login_image.png
+    - /Users/solai/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/FreshMate-Flutter-Expiry-date-Recognition/assets/signup_image.png
+

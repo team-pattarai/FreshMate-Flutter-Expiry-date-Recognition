@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/stored_items');
+                Navigator.pushNamed(context, '/storage');
               },
               child: Text('Your Storage'),
             ),
