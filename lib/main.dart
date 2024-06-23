@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'pages/home_page.dart';
+import 'pages/login_page.dart';
 import 'pages/notification_page.dart';
 import 'pages/profile_page.dart';
 import 'pages/scan_page.dart';
 import 'pages/stored_items_page.dart';
 import 'pages/edit_item_page.dart';
 import 'pages/manual_input_page.dart';
-import 'pages/login_page.dart';
 import 'pages/signup_page.dart';
 
 void main() {

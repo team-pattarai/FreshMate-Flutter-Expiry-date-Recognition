@@ -12,7 +12,7 @@ class SignUpPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(height: 100),
-              Image.asset('/Users/solai/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/FreshMate-Flutter-Expiry-date-Recognition/assets/signup_image.png', height: 200), // Add your image asset here
+              Image.asset('/Users/solai/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/FreshMate-Flutter-Expiry-date-Recognition/assets/signup_image.png', height: 200),
               SizedBox(height: 40),
               TextField(
                 decoration: InputDecoration(
@@ -36,44 +36,16 @@ class SignUpPage extends StatelessWidget {
                 obscureText: true,
               ),
               SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pushReplacementNamed(context, '/home');
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.yellow, // Set the button color
-                  foregroundColor: Colors.white, // Set the text color
-                  minimumSize: Size(double.infinity, 50),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    // Add sign up logic here
+                    Navigator.pushReplacementNamed(context, '/login');
+                  },
+                  child: Text('Sign Up'),
                 ),
-                child: Text('Sign Up'),
               ),
-              SizedBox(height: 20),
-              Text('Or'),
-              SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  IconButton(
-                    onPressed: () {
-                      // Handle Google Sign-Up
-                    },
-                    icon: Icon(Icons.account_circle),
-                  ),
-                  IconButton(
-                    onPressed: () {
-                      // Handle Apple Sign-Up
-                    },
-                    icon: Icon(Icons.apple),
-                  ),
-                  IconButton(
-                    onPressed: () {
-                      // Handle Facebook Sign-Up
-                    },
-                    icon: Icon(Icons.facebook),
-                  ),
-                ],
-              ),
-              SizedBox(height: 20),
               TextButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/login');
