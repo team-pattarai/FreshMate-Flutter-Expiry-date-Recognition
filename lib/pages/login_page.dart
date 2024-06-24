@@ -16,7 +16,7 @@ class LoginPage extends StatelessWidget {
         ),
         child: ListView( // Wrap with ListView for scrollability
           children: <Widget>[
-            SizedBox(height: 100),
+            SizedBox(height: 150),
             Center(child: Image.asset('/Users/solai/Library/Mobile Documents/com~apple~CloudDocs/Documents/GitHub/FreshMate-Flutter-Expiry-date-Recognition/assets/login_image.png', height: 200)),
             SizedBox(height: 40),
             Container(

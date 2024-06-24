@@ -4,26 +4,62 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Freshmate'),
-      ),
-      body: Center(
+      backgroundColor: Color.fromARGB(255, 222, 217, 121), // Light purple background
+      body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('Welcome Juanita!', style: TextStyle(fontSize: 24)),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/storage');
-              },
-              child: Text('Your Storage'),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Align(
+                alignment: Alignment.topLeft,
+               
+              ),
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/scan');
-              },
-              child: Text('Add Item'),
+            SizedBox(height: 20),
+            Expanded(
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      'Welcome Juanita!',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
+                    SizedBox(height: 40),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/storage');
+                      },
+                      child: Text('Your storage', style: TextStyle(color: Colors.black)),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color.fromARGB(255, 203, 253, 200), // Light green background
+                        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 50),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/scan');
+                      },
+                      child: Text('Add item', style: TextStyle(color: Colors.black)),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color.fromARGB(255, 203, 253, 200), // Light green background
+                        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 50),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ],
         ),
@@ -44,7 +80,7 @@ class HomePage extends StatelessWidget {
           ),
         ],
         currentIndex: 0,
-        selectedItemColor: Colors.green,
+        selectedItemColor: Colors.black,
         onTap: (index) {
           if (index == 1) {
             Navigator.pushNamed(context, '/notifications');
